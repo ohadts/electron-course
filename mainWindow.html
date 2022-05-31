@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript">
+             window.addEventListener("load",function() {
+                //backgroundThrottling GOTCHA:
+                // const intervalEl = document.getElementById("interval");
+                // let time = 0;
+                // setInterval(()=>{
+                //     time++;
+                //     intervalEl.innerHTML = time;
+                // }, 1000)
+
+                //ipc
+                // window.electron.onAsynchronousMessage((arg) => {
+                //     console.log(arg);
+                // })
+                // const buttonEl = document.getElementsByTagName('button');
+                // buttonEl[0].addEventListener('click', (event)=>{
+                //     window.electron.send("asynchronous-message", "PING");
+                // })
+            })
+
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <!-- backgroundThrottling GOTCHA:-->
+        <!-- <div id="interval"></div> -->
+        <!-- ipc:-->
+        <!-- <button>PING!</button> -->
+    </body>
+</html>
